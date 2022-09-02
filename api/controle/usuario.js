@@ -4,9 +4,9 @@ var Usuario = require('../modelos/usuarios');
 
 function inicio(req, res) {
 	res.status(200).send({
-		nome: 'Luan',
-		idade: '18',
-		apelido: 'lulu',
+		nome: 'Ariadne',
+		idade: '18 anos',
+		apelido: 'Ari ',
 	});
 }
 
@@ -16,4 +16,10 @@ function teste(req, res) {
 	});
 }
 
-module.exports = { inicio, teste };
+function hello (req, res){
+	res.status(200).send({
+		message: 'Esse é o fim da rota!',
+	});
+}
+
+module.exports = { inicio, teste , hello};

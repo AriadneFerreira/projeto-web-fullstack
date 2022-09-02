@@ -10,4 +10,11 @@ function test(req, res) {
 	});
 }
 
-module.exports = { init, test };
+function hello (req, rest){
+	rest.status(200).send({
+message: 'Teste de mensagem',
+
+	});
+}
+
+module.exports = { init, test, hello};
